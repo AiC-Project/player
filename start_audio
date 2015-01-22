@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -eu
+
+echo "Starting ./player_audio"
+./player_audio

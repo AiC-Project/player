@@ -1,0 +1,6 @@
+    message nfcPayload {
+        optional uint32 type     = 1; // 0:URi ; 1:Text ; 2:SmartPoster
+        optional uint32 lang     = 2; // 0:Eng-US ; 1:FR
+        optional string text     = 3;
+        optional string tittle   = 4; // Only for SmartPoster
+    }

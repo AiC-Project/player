@@ -1,0 +1,11 @@
+image: aic:player-build
+# Build with aic-player-build.Dockerfile
+
+release-binary:
+  script:
+    - cd sdl
+    - rm -f CMakeCache.txt; cmake . -DBUILD_SDL=1 -DBUILD_NFC=1 -DWITH_TEST=1
+    - make clean ; make
+  artifacts:
+    paths:
+    - sdl/out

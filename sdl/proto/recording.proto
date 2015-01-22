@@ -1,0 +1,4 @@
+    message recordingPayload {
+        optional string recFilename     = 1;
+        optional uint32 startStop       = 2;
+    }
