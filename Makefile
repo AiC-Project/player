@@ -32,7 +32,7 @@ cppcheck:
 # Build dependencies are not required on the host, except for the make command and Docker.
 #
 
-docker-all: clean docker-wrapper docker-make docker-images
+docker-all: docker-wrapper docker-make docker-images
 
 wrap = docker run --rm -ti -v ${CURDIR}/:/home/volume -ti aic.player-wrap
 
