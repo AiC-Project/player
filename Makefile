@@ -5,7 +5,6 @@ clean:
 	rm -f sdl/CMakeCache.txt
 	if test -f sdl/Makefile; then make --directory sdl clean; fi
 	rm -f sdl/out/player_sdl_grab
-	# XXX the above should not be required
 
 build-audio:
 	cd sdl && cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_SDL=FALSE
