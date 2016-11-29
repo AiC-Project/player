@@ -16,7 +16,7 @@
 
 extern int g_width;
 extern int g_height;
-extern int g_rotation;
+extern float g_rotation;
 
 /** Fill a char array with a timestamp
  * The array is assumed big enough. */
