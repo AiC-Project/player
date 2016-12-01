@@ -48,3 +48,8 @@ docker-images:
 	docker build -t aic.sdl -f sdl.Dockerfile .
 	docker build -t aic.sensors -f sensors.Dockerfile .
 
+docker-images-gpu:
+	docker build -t aic.audio -f audio.Dockerfile .
+	docker build -t aic.sdl -f sdl-gpu.Dockerfile .
+	docker build -t aic.sensors -f sensors.Dockerfile .
+
