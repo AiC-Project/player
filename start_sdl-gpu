@@ -18,6 +18,6 @@ fi
 echo "Starting ./player_sdl_grab"
 while true
 do
-    vglrun -c 0 -d :1 ./player_sdl_grab
+    vglrun -c 0 -d :0 ./player_sdl_grab
     sleep 1
 done
