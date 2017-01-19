@@ -1,0 +1,13 @@
+addons:
+  apt:
+    packages:
+      - doxygen
+      - doxygen-doc
+      - doxygen-latex
+      - doxygen-gui
+      - graphviz
+
+script: cd sdl && doxygen Doxyfile && bash doc/publish-docs.sh
+
+notifications:
+  email: false
