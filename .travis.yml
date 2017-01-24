@@ -9,5 +9,7 @@ addons:
 
 script: cd sdl && doxygen Doxyfile && cd .. && bash .travis/publish-docs.sh
 
+dist: xenial
+
 notifications:
   email: false
