@@ -1,3 +1,5 @@
+dist: trusty
+
 addons:
   apt:
     packages:
@@ -8,8 +10,6 @@ addons:
       - graphviz
 
 script: cd sdl && doxygen Doxyfile && cd .. && bash .travis/publish-docs.sh
-
-dist: xenial
 
 notifications:
   email: false
