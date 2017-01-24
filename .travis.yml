@@ -7,7 +7,7 @@ addons:
       - doxygen-gui
       - graphviz
 
-script: cd sdl && doxygen Doxyfile && bash doc/publish-docs.sh
+script: cd sdl && doxygen Doxyfile && bash .travis/publish-docs.sh
 
 notifications:
   email: false
