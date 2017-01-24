@@ -4,7 +4,6 @@ out
 log/*
 sdl/doc/*
 !sdl/doc/Local_Dev_Architecture.png
-!sdl/doc/publish-docs.sh
 CMakeCache.txt
 *.kdev4
 .kdev4/*
